@@ -1,6 +1,8 @@
 qmlmatrix (4.0.0-0) unstable; urgency=low
 
   * Update dependencies for Stretch
+  * Use hardware acceleration for rendering
+  * Increase frame-rate to 40 fps.
 
  -- Team Kano <dev@kano.me>  Mon, 18 Jun 2018 12:21:00 +0100
 

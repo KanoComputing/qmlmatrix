@@ -1,7 +1,7 @@
 /*
  *  matrix.qml
  *
- *  Copyright (C) 2017 Kano Computing Ltd.
+ *  Copyright (C) 2017 - 2018 Kano Computing Ltd.
  *  License: http://www.gnu.org/licenses/gpl-2.0.txt GNU GPLv2
  *
  *  Matrix like animation on QML. Most of the rendering code comes from
@@ -21,7 +21,7 @@ Rectangle {
     /* This timer is used to simulate setInterval() available on web browsers */
     Timer {
         id: paintTimer
-        interval: 150
+        interval: 25
         repeat: true
         triggeredOnStart: true
         onTriggered: {
@@ -68,6 +68,9 @@ Rectangle {
         property int fontSize: 0
         property var drops: []
         property bool fadeout: false
+
+        renderTarget: Canvas.FramebufferObject
+        renderStrategy: Canvas.Cooperative
 
         onPaint: {
             var ctx = getContext("2d");
