@@ -20,7 +20,7 @@
 #
 
 # Time in seconds for the screen saver to run
-ssaver_wait=180
+ssaver_wait=300
 
 while true
 do
