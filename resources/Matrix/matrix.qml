@@ -69,9 +69,6 @@ Rectangle {
         property var drops: []
         property bool fadeout: false
 
-        renderTarget: Canvas.FramebufferObject
-        renderStrategy: Canvas.Cooperative
-
         onPaint: {
             var ctx = getContext("2d");
 
