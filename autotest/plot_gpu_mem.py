@@ -34,4 +34,9 @@ if __name__ == '__main__':
 
     x = range(0, len(leak_numbers))
     plt.plot(x, leak_numbers)
+
+    plt.title('Screen Saver testing with GPU free memory sampling')
+    plt.ylabel('GPU free mem in MB')
+    plt.xlabel('Number of memory samples')
+
     plt.savefig(output_graph_file)
