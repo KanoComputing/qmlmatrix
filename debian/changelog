@@ -1,3 +1,9 @@
+qmlmatrix (4.2.0-0) unstable; urgency=low
+
+  * Don't show the cursor on top of the screensaver
+
+ -- Team Kano <dev@kano.me>  Wed, 24 Oct 2018 16:21:00 +0100
+
 qmlmatrix (4.0.0-0) unstable; urgency=low
 
   * Update dependencies for Stretch

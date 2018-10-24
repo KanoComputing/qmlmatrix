@@ -6,6 +6,7 @@
 
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QCursor>
 
 #include <signal.h>
 #include <unistd.h>
@@ -22,6 +23,9 @@ int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
+
+    // Hide the cursor
+    app.setOverrideCursor(QCursor(Qt::BlankCursor));
 
     signal(SIGHUP, signal_callback);
 
