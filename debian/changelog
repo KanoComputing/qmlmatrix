@@ -1,6 +1,7 @@
 qmlmatrix (4.2.0-0) unstable; urgency=low
 
   * Don't show the cursor on top of the screensaver
+  * Add missing license headers
 
  -- Team Kano <dev@kano.me>  Wed, 24 Oct 2018 16:21:00 +0100
 
